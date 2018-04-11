@@ -1,0 +1,11 @@
+{
+  "pages": [
+    "pages/index/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#505460",
+    "navigationBarTitleText": "dateTimePicker",
+    "navigationBarTextStyle": "white"
+  }
+}

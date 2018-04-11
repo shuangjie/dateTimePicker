@@ -1,0 +1,28 @@
+<!--index.wxml-->
+<view class="weui-flex time-component">
+  <!-- icon -->
+  <view class="placeholder icon">
+    <image src='/images/icon/time.png' class='icon-img'></image>
+  </view>
+  <!-- 开始时间 -->
+  <view class="placeholder hd">开始时间</view>
+
+  <!-- 日期选择 -->
+  <view class="placeholder date">
+    <picker mode="multiSelector" value="{{dateTime}}" bindcolumnchange="changeDateTimeColumn" range="{{dateTimeArray}}">
+      <view class="tui-picker-detail">
+        {{dateTimeArray[0][dateTime[0]]}}-{{dateTimeArray[1][dateTime[1]]}}-{{day}}
+      </view>
+    </picker>
+  </view>
+
+  <view class='placeholder line'>|</view>
+
+  <!-- 时间选择 -->
+  <view class="placeholder time">
+    <picker mode="time" value="{{time}}" start="00:00" end="23:59" bindchange="bindTimeChange">
+      <view class="picker">{{time}}</view>
+    </picker>
+  </view>
+
+</view>
